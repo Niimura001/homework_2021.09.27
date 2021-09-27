@@ -46,47 +46,53 @@
     </div>
   </div>
   <h2 class="inquiry-ttl">問い合わせ</h2>
-  <table class="inquiry-table">
-    <tr>
-      <th class="inquiry-name">名前</th>
-      <td class="inquiry-name__form">
-        <form action="#" method="get">
-          <input type="text" name="name">
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <th class="inquiry-mail">メールアドレス</th>
-      <td class="inquiry-mail__form">
-        <form action="#" method="get">
-          <input type="email" name="email">
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <th class="inquiry-requirement-select">要件</th>
-      <td class="inquiry-requirement-select__box">
-        <form action="#" method="get">
-          <select purpose="select">
-            <option value="広告掲載について">広告掲載について</option>
-            <option value="～について">～について</option>
-            <option value="～について">～について</option>
-          </select>
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <th class="inquiry-contents">内容</th>
-      <td class="inquiry-contents__form">
-        <form action="#" method="get">
-          <textarea name="contents" cols="50" rows="15"></textarea>
-        </form>
-      </td>
-    </tr>
-    <tr>
-      <th class="button"><input class="button-delete" type="submit" name="submit" value="削除"><input class="button-submit" type="submit" name="submit" value="送信"></th>
-    </tr>
-  </table>
+  <div class="table">
+    <table class="table-form">
+      <tr>
+        <th class="inquiry-name">名前</th>
+        <td class="inquiry-name__form">
+          <form action="#" method="get">
+            <input type="text" name="name" class="form-text">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <th class="inquiry-mail">メールアドレス</th>
+        <td class="inquiry-mail__form">
+          <form action="#" method="get">
+            <input type="email" name="email" class="form-email">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <th class="inquiry-requirement-select">要件</th>
+        <td class="inquiry-requirement-select__box">
+          <form action="#" method="get">
+            <select purpose="select">
+              <option value="広告掲載について">広告掲載について</option>
+              <option value="～について">～について</option>
+              <option value="～について">～について</option>
+            </select>
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <th class="inquiry-contents">内容</th>
+        <td class="inquiry-contents__form">
+          <form action="#" method="get">
+            <textarea name="contents" class= "inquiry-contents__form__textarea" ></textarea>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="button-flex">
+    <div class="button-delete-item">
+      <input class="button-delete" type="submit" name="submit" value="削除">
+    </div>
+    <div class="button-submit-item">
+      <input class="button-submit" type="submit" name="submit" value="送信">
+    </div>
+  </div>
 </body>
-
 </html>
