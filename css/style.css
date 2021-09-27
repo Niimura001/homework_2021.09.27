@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   max-width: 1000px;
 }
@@ -8,8 +11,6 @@ body {
 .firstview img {
   width: 100%;
   height: 400px;
-  margin: 0;
-  padding: 0;
 }
 .firstview h1 {
   position: absolute;
@@ -17,26 +18,25 @@ body {
   color: white;
   left: 50%;
   top: 50%;
-  padding: 0;
-  z-index: +1;
+  transform: translate(-50%, -50%);
 }
 .about-ttl {
   text-align: center;
-  margin: 70px auto;
+  margin: 70px auto 40px auto;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .about-txt {
   text-align: center;
   display: block;
-  margin: 70px auto;
+  margin: 0 auto;
   line-height: 1.5em;
 }
 .blog-ttl {
   text-align: center;
-  margin: 70px auto;
+  margin: 70px auto 40px auto;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .blog-flex__item {
   display: flex;
@@ -48,21 +48,97 @@ body {
 .blog__card__img img {
   width: 100%;
 }
-.blog__card__ttl__txt{
+.blog__card__ttl__txt {
   font-size: 15px;
   margin-top: 10px;
   line-height: 1.5em;
 }
 .inquiry-ttl {
   text-align: center;
-  margin: 70px auto;
+  margin: 70px auto 40px auto;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
-.inquiry-table {
+.table {
   width: 780px;
-  justify-content: space-between;
+  margin: 0 auto;
 }
-.inquiry-name__form{
-  width: 650px;
+.table-form {
+  width: 100%;
+}
+.inquiry-name {
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  width: 30%;
+}
+.inquiry-name__form {
+  padding: 10px;
+  width: 70%;
+}
+.form-text {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+}
+.inquiry-mail {
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  width: 30%;
+}
+.inquiry-mail__form {
+  padding: 10px;
+  width: 70%;
+}
+.form-email {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+}
+.inquiry-requirement-select {
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  width: 30%;
+}
+.inquiry-requirement-select__box {
+  padding-left: 10px;
+  width: 70%;
+}
+.inquiry-contents {
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  width: 30%;
+}
+.inquiry-contents__form {
+  padding: 10px;
+  width: 70%;
+}
+.inquiry-contents__form__textarea {
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+}
+.button-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.button-delete {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(204, 204, 204);
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 15px;
+  margin: 15px 15px 25px 15px;
+  border: none;
+}
+.button-submit {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(41, 189, 194);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 15px;
+  margin: 15px 15px 25px 15px;
+  border: none;
 }
